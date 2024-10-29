@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Tienda en Línea</title>
+</head>
+<body>
+
+    <!-- Encabezado de la tienda -->
+    <header>
+        <h1>TomoeSHOES</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de productos disponibles -->
+    <section id="productos">
+        <h2>Productos Disponibles</h2>
+        <div class="producto">
+            <h3>Nike stark</h3>
+            <p>Talla desde 37 Eur a 42 Eur</p>
+            <img src="img\8f6331e8f792f87a9ac0a56007782555.jpg" alt="producto 1">
+            <p>Precio: $200,000</p>
+            <button onclick="agregarAlCarrito('Nike stark', 200000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Nike flash</h3>
+            <p>Talla desde 37 Eur a 42 Eur</p>
+            <img src="img\91c76b7813d591304577e11c8b33ad39.jpg" alt="producto 2">
+            <p>Precio: $150,000</p>
+            <button onclick="agregarAlCarrito('Nike flash', 150000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Nike skate pink</h3>
+            <p>Talla desde 37 Eur a 42 Eur</p>
+            <img src="img\652961eaba5040ed5f6d5fc3cdac76b4.jpg" alt="producto 3">
+            <p>Precio: $185,000</p>
+            <button onclick="agregarAlCarrito('Nike skate pink', 185000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <h3>nike skate black</h3>
+            <p>Talla desde 37 Eur a 42 Eur</p>
+            <img src="img\4b87babbbdab4d4b9820a96310a5f142.jpg" alt="producto 4">
+            <p>Precio: $145,000</p>
+            <button onclick="agregarAlCarrito('nike skate black', 145000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Nike skate sepia</h3>
+            <p>Talla desde 37 Eur a 42 Eur</p>
+            <img src="img\b7bb2db09d0c19c2405cede82680170f.jpg" alt="producto 5">
+            <p>Precio: $189,000</p>
+            <button onclick="agregarAlCarrito('Nike skate sepia', 189000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Nike siper inca</h3>
+            <p>Talla desde 37 Eur a 42 Eur</p>
+            <img src="img\5454d58920aec7e85488ee342e6ec888.jpg" alt="producto 6">
+            <p>Precio: $147,000</p>
+            <button onclick="agregarAlCarrito('Nike siper inca', 147000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Nike Platano</h3>
+            <p>Talla desde 37 Eur a 42 Eur</p>
+            <img src="img\945ba1f81917c4634157ff5339077d38.jpg" alt="producto 7">
+            <p>Precio: $240,000</p>
+            <button onclick="agregarAlCarrito('Nike Platano', 240000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Nike canoas</h3>
+            <p>Talla desde 37 Eur a 42 Eur</p>
+            <img src="img\c104cc1953dd55a4243c92da8a1ece6d.jpg" alt="producto 8">
+            <p>Precio: $280,000</p>
+            <button onclick="agregarAlCarrito('Nike canoas', 280000)">Agregar al Carrito</button>
+
+        </div>
+    </section>
+
+
+    
+    <!-- Sección del carrito de compras -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="contenidoCarrito">
+                <!-- Aquí se agregan los productos del carrito -->
+            </tbody>
+        </table>
+        <p>Total: $<span id="totalCarrito">0</span></p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </section>
+
+
+</body>
+</html>
